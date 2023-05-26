@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <tittle>GUI Calculator</tittle>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <div class="containner">
+        <form name="form"> 
+            <div class="display">
+                <input type="text" placeholder="0" name="displayresult"> 
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <input class="btn" type="button" name="b7" value="7" onclick="func(b7.value)">
+                    <input class="btn" type="button" name="b8" value="8" onclick="func(b8.value)">
+                    <input class="btn" type="button" name="b9" value="9" onclick="func(b9.value)">
+                    <input class="btn" type="button" name="+" value="+" onclick="func(plus.value)">
+                </div>
+                <div>
+                    <input class="btn" type="button" name="b4" value="4" onclick="func(b4.value)">
+                    <input class="btn" type="button" name="b5" value="5" onclick="func(b5.value)">
+                    <input class="btn" type="button" name="b6" value="6" onclick="func(b6.value)">
+                    <input class="btn" type="button" name="-" value="-" onclick="func(minus.value)">
+                </div>
+                <div>
+                    <input class="btn" type="button" name="b1" value="1" onclick="func(b1.value)">
+                    <input class="btn" type="button" name="b2" value="2" onclick="func(b2.value)">
+                    <input class="btn" type="button" name="b3" value="3" onclick="func(b3.value)">
+                    <input class="btn" type="button" name="*" value="*" onclick="func(multiply.value)">
+                </div>
+                <div>
+                    <input class="btn" type="button" name="b0" value="0" onclick="func(b7.value)">
+                    <input class="btn" type="button" name="bd" value="." onclick="func(b8.value)">
+                    <input class="btn" type="button" name="divv" value="/" onclick="func(b9.value)">
+                    <input class="btn" type="button" name="eq" value="=" onclick="displayresult.value.eval(displayresult.value)">
+                </div>
+            </div>
+        </form>
+        <script>
+            function func(result) {
+                form.displayresult.value=form.displayresult.value+result;
+            }        
+        </script>
+    </div>
+</body>
+</html>
